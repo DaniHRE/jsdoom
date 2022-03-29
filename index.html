@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .dosbox-container {
+            width: 900px;
+            height: 600px;
+        }
+
+        .dosbox-container>.dosbox-overlay {
+            background: url(https://js-dos.com/cdn/DOOM.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dosbox"></div>
+    <button onclick="dosbox.requestFullScreen();">Make fullscreen</button>
+
+    <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
+    <script type="text/javascript">
+        var dosbox = new Dosbox({
+            id: "dosbox",
+            onload: function (dosbox) {
+                dosbox.run("ultimate-doom.zip", "./UltDoom/DOOM.EXE");
+            },
+            onrun: function (dosbox, app) {
+                console.log("App '" + app + "' is runned");
+            }
+        });
+    </script>
+</body>
+
+</html>
