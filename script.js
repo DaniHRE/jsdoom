@@ -216,7 +216,7 @@
         })(this),
         progress: (function(_this) {
           return function(total, current) {
-            return _this.ui.updateMessage("Downloading js-dos (" + (current * 100 / total | 0) + "%)");
+            return _this.ui.updateMessage("Loading js-dos (" + (current * 100 / total | 0) + "%)");
           };
         })(this)
       });
