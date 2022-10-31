@@ -7,4 +7,4 @@
 ### I'ts a Emulator? 📺
 
 #### ✅ Yesssss, this is a emulator running in html with js component.
-#### For this project i used JS DosBox api, and simples html structure to make this simple page.
+#### For this project i used JS DosBox api, and simple html structure to make this simple page.
